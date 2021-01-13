@@ -45,4 +45,4 @@ jobs:
       - name: Publish library
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-        run: sbt publish
+        run: sbt "+publish"
