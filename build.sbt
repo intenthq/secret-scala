@@ -17,7 +17,7 @@ lazy val root = (project in file("."))
 
 testFrameworks += new TestFramework("weaver.framework.TestFramework")
 
-publishTo := Some("GitHub Package Registry" at "https://maven.pkg.github.com/intenthq/scala-secret")
+publishTo := Some("GitHub Package Registry (intenthq/scala-secret)" at "https://maven.pkg.github.com/intenthq/scala-secret")
 credentials ++= scala.util.Properties
   .envOrNone("GITHUB_TOKEN")
   .map(githubToken => Credentials("GitHub Package Registry", "maven.pkg.github.com", "_", githubToken))
